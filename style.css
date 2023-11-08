@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'cursive';
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.bg-section-1 {
+    background-image: url('images/animate3.png');
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+.bg-section-1-op {
+    background: rgba(0, 0, 0, 0.7);
+    height: 600px;
+    padding: 200px 0px;
+}
+.head-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-section-1 h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'cursive';
+    font-style: italic;
+}
+.bg-section-2{
+    background-image: url('images/bg-img-2.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+.event-img{
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    border: 5px solid #fff;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 600px){
+    .bg-section-1 h1{
+        font-size: 40px;
+    }
+    .bg-section-1{
+        height: fit-content;
+    }
+    .bg-section-1-op {
+        height: fit-content;
+        padding: 50px 0px;
+    }
+}
