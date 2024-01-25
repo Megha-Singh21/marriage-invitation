@@ -14,13 +14,11 @@ a{
     background-image: url('images/animate3.png');
     background-position: center;
     background-size: cover;
-    height: 600px;
 }
 
 .bg-section-1-op {
     background: rgba(0, 0, 0, 0.7);
-    height: 600px;
-    padding: 200px 0px;
+    padding: 100px 0px;
 }
 .head-1{
     display: flex;
