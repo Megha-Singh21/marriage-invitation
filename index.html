@@ -182,17 +182,17 @@
                         <div class="mb-3">
                             <label for="exampleInput1" class="form-label">Name</label>
                             <input type="text" name="Name" class="form-control" id="exampleInput1">
-                          </div>
+                        </div>
                         <div class="mb-3">
-                          <label for="exampleInput2" class="form-label">Contact Number</label>
-                          <input type="number" name="Contact Number" class="form-control" id="exampleInput2">
+                            <label for="exampleInput2" class="form-label">Contact Number</label>
+                            <input type="number" name="Contact Number" class="form-control" id="exampleInput2">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInput3" class="form-label">Arrival Date</label>
                             <input type="date" name="Arrival Date" class="form-control" id="exampleInput3">
                         </div>
                         <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-                      </form>
+                    </form>
                 </div>
             </div>
         </div>
@@ -218,7 +218,7 @@
                 "s";
             if (distance < 0) {
                 clearInterval(countDownfunction);
-                document.getElementById("count").innerHTML = "Expired";
+                document.getElementById("count").innerHTML = "Just Married";
             }
         }, 1000);
     </script>
@@ -226,25 +226,28 @@
     <script>
         const form = document.querySelector("#form")
         const submitButton = document.querySelector("#submit")
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbw1F7z-jXrrSDsKaARuiuxQ0EHvcI1vUlMd7zuUt4HlmHr6VJat65p1_UIRyA_dmtgJ/exec'
-     
+        const scriptURL =
+            'https://script.google.com/macros/s/AKfycbw1F7z-jXrrSDsKaARuiuxQ0EHvcI1vUlMd7zuUt4HlmHr6VJat65p1_UIRyA_dmtgJ/exec'
+
         form.addEventListener('submit', e => {
-          submitButton.disabled = true
-          e.preventDefault()
-          let requestBody = new FormData(form)
-          fetch(scriptURL, { method: 'POST', body: requestBody})
-            .then(response => {
-               alert('Thankyou for joining us!', response)
-               submitButton.disabled = false
-              })
-            .catch(error => {
-            alert('Error!', error.message)
-              submitButton.disabled = false
-     
-            }
-            )
+            submitButton.disabled = true
+            e.preventDefault()
+            let requestBody = new FormData(form)
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: requestBody
+                })
+                .then(response => {
+                    alert('Thankyou for joining us!', response)
+                    submitButton.disabled = false
+                })
+                .catch(error => {
+                    alert('Error!', error.message)
+                    submitButton.disabled = false
+
+                })
         })
-     </script>
+    </script>
 </body>
 
 </html>

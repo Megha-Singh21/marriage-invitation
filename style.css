@@ -10,6 +10,9 @@ a{
     text-decoration: none;
     color: #fff;
 }
+.audio{
+    visibility: hidden;
+}
 .bg-section-1 {
     background-image: url('images/animate3.png');
     background-position: center;
